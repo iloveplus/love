@@ -733,6 +733,10 @@
 		// doStep();
 	})
 
+	$('img').each(function(){
+		$(this).attr('src', 'http://www.iloveplus.cn/love/images/count.png');
+		console.log($(this).attr('src'));
+	})
 
 	$(".tl-attach").click(function(){
 		$(".md-content").html($(this).find("div").html());
@@ -791,7 +795,7 @@
     	
 
         var viewer = new Viewer(cur[0], {
-            url: 'data-origin',
+            url: 'src',
             title:false
         });
     });
