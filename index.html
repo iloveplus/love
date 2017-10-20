@@ -1,0 +1,890 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title></title>
+    <link href="css/clock.css" rel="stylesheet" type="text/css"/>
+    <link href="css/index.css" rel="stylesheet" type="text/css"/>
+	<link href="css/viewer.min.css" rel="stylesheet" type="text/css"/>
+</head>
+<body>
+	<div class="lock">
+		<div class="lock-cnt">
+			<div class="lock-tip">输入密码查看：</div>
+			<div class="lock-box">
+				<input type="password" name="">
+				<div onclick="openLock(this)">解锁</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="time-list" id="timeList">
+		<ul class="time-list-ul">
+			<li class="time-item">
+				<div class="tl-text">
+					2016年06月15日下午两点五十是我向她表白的日子，也是我这一生中最紧张的日子，在等待回复的8个多小时中我从来没有过如此的心跳与焦虑。她是一个很特别且很有主见的女孩，和她在一起你会觉得莫名的开心。她就像一个天使，能够温暖你的心。虽然表白的最后，结局并不是怎么美好，但能够听到她的故事，心情也平静了很多。她对爱的付出与执着深深打动了我，我觉得了这就是我一生所要等的人。如果能早点认识她该多好，这样我就可以在她最无助的时候，给她可以依靠的肩膀。
+				</div>
+				<div class="tl-attach">
+					【附件：表白信】
+					<div>
+						佳佳：
+						我喜欢你，这句话憋在我心里很久了，但一直害怕开口。一是不愿做破坏你感情的第三者，二是怕开口后我们会成为熟悉的陌生人，但是最近又特别害怕如果不开口我会永远错过你。
+						你问过我为什么辞职了又回来，我只是更清楚未来要选择的方向，对于感情，该有的那份执着。回到天津，回到曾今起始的地方，我想了很多，但总是时不时想起你，想起你俏皮，你的幽默以及你的热情，我知道我真正喜欢的人是你。人一生好的工作机会很多，但选择一个对的人很难，事业没了可以再找，人错过了那便是今生无缘，而你就是我要等的那个对的人。
+						我曾经爱过一个女孩，也谈过一次恋爱。爱的那个女孩错过了缘分，有了缘分的女孩却遗失了爱。直到遇到你，我不想再错过你。你曾经说没有挖不倒得墙角，我不知道是否有能力能够赢得你的青睐，但为你我愿做那把铲子，不管成功与失败，青春无悔。
+						我是一个有选择困难症的人，但喜欢你我却坚定不移。每天白天因为见到你我都会不自主的开心，每天晚上因为不能和你聊天我会半夜无眠，其实我并不是一个非常健谈的人。
+						和你一样我也是一个忠实的海贼迷，喜欢路飞的热血，喜欢索隆的执着，喜欢乔巴的可爱，喜欢乌索普的幽默……但更多地是喜欢海贼王里对理想的追逐，对梦想的坚定，以及对未来的信念。我知道那就是我一直该奔跑的方向。
+						如果可以，能否让我牵起你的手，一起寻找属于我们的One Piece。
+					</div>
+				</div>
+				<ul class="tl-imgs">
+					<li><img data-origin="images/0615/001.png" src="images/0615/001.png"></li>
+					<li><img data-origin="images/0615/002.png" src="images/0615/002.png"></li>
+					<li><img data-origin="images/0615/003.png" src="images/0615/003.png"></li>
+					<li><img data-origin="images/0615/004.png" src="images/0615/004.png"></li>
+					<li><img data-origin="images/0615/005.png" src="images/0615/005.png"></li>
+					<li><img data-origin="images/0615/006.png" src="images/count.png"></li>
+					<li><img data-origin="images/0615/007.png" src="images/count.png"></li>
+					<li><img data-origin="images/0615/008.png" src="images/count.png"></li>
+					<li><img data-origin="images/0615/009.png" src="images/count.png"></li>
+					<li><img data-origin="images/0615/010.png" src="images/count.png"></li>
+					<li><img data-origin="images/0615/011.png" src="images/count.png"></li>
+					<li><img data-origin="images/0615/012.png" src="images/count.png"></li>
+					<li><img data-origin="images/0615/013.png" src="images/count.png"></li>
+					<li><img data-origin="images/0615/014.png" src="images/count.png"></li>
+					<li><img data-origin="images/0615/015.png" src="images/count.png"></li>
+					<li><img data-origin="images/0615/016.png" src="images/count.png"></li>
+					<li><img data-origin="images/0615/017.png" src="images/count.png"></li>
+					<li><img data-origin="images/0615/018.png" src="images/count.png"></li>
+					<li><img data-origin="images/0615/019.png" src="images/count.png"></li>
+					<li><img data-origin="images/0615/020.png" src="images/count.png"></li>
+					<li><img data-origin="images/0615/021.png" src="images/count.png"></li>
+					<li><img data-origin="images/0615/022.png" src="images/count.png"></li>
+					<li><img data-origin="images/0615/023.png" src="images/count.png"></li>
+					<li><img data-origin="images/0615/024.png" src="images/count.png"></li>
+					<li><img data-origin="images/0615/025.png" src="images/count.png"></li>
+					<li><img data-origin="images/0615/026.png" src="images/count.png"></li>
+					<li><img data-origin="images/0615/027.png" src="images/count.png"></li>
+					<li><img data-origin="images/0615/028.png" src="images/count.png"></li>
+					<div class="img-count"><div></div></div>
+				</ul>
+				<div class="tl-dot"></div>
+			</li>
+			<li class="time-item">
+				<div class="tl-text">
+					搬到莘庄了，如果上下班能够遇到她该多好。今晚我们聊了好久，都凌晨了，有点开心……
+				</div>
+				<div class="tl-attach"></div>
+				<ul class="tl-imgs">
+					<li><img data-origin="images/0628/001.png" src="images/0628/001.png"></li>
+					<li><img data-origin="images/0628/002.png" src="images/0628/002.png"></li>
+					<li><img data-origin="images/0628/003.png" src="images/0628/003.png"></li>
+					<li><img data-origin="images/0628/004.png" src="images/0628/004.png"></li>
+					<li><img data-origin="images/0628/005.png" src="images/0628/005.png"></li>
+					<li><img data-origin="images/0628/006.png" src="images/count.png"></li>
+					<li><img data-origin="images/0628/007.png" src="images/count.png"></li>
+					<li><img data-origin="images/0628/008.png" src="images/count.png"></li>
+					<li><img data-origin="images/0628/009.png" src="images/count.png"></li>
+					<li><img data-origin="images/0628/010.png" src="images/count.png"></li>
+					<li><img data-origin="images/0628/011.png" src="images/count.png"></li>
+					<li><img data-origin="images/0628/012.png" src="images/count.png"></li>
+					<li><img data-origin="images/0628/013.png" src="images/count.png"></li>
+					<li><img data-origin="images/0628/014.png" src="images/count.png"></li>
+					<li><img data-origin="images/0628/015.png" src="images/count.png"></li>
+					<li><img data-origin="images/0628/016.png" src="images/count.png"></li>
+					<li><img data-origin="images/0628/017.png" src="images/count.png"></li>
+					<div class="img-count"><div></div></div>
+				</ul>
+				<div class="tl-dot"></div>
+			</li>
+			<li class="time-item">
+				<div class="tl-text">
+					今天我们一起讨论了对画画的认知……
+				</div>
+				<div class="tl-attach"></div>
+				<ul class="tl-imgs">
+					<li><img data-origin="images/0629/001.png" src="images/0629/001.png"></li>
+					<li><img data-origin="images/0629/002.png" src="images/0629/002.png"></li>
+					<li><img data-origin="images/0629/003.png" src="images/0629/003.png"></li>
+					<li><img data-origin="images/0629/004.png" src="images/0629/004.png"></li>
+					<li><img data-origin="images/0629/005.png" src="images/0629/005.png"></li>
+					<li><img data-origin="images/0629/006.png" src="images/count.png"></li>
+					<div class="img-count"><div></div></div>
+				</ul>
+				<div class="tl-dot"></div>
+			</li>
+			<li class="time-item">
+				<div class="tl-text">
+					在她的建议下搬了回去，虽然折腾却也值得……
+				</div>
+				<div class="tl-attach"></div>
+				<ul class="tl-imgs">
+					<li><img data-origin="images/0703/001.png" src="images/0703/001.png"></li>
+					<li><img data-origin="images/0703/002.png" src="images/0703/002.png"></li>
+					<li><img data-origin="images/0703/003.png" src="images/0703/003.png"></li>
+					<li><img data-origin="images/0703/004.png" src="images/0703/004.png"></li>
+					<li><img data-origin="images/0703/005.png" src="images/0703/005.png"></li>
+					<li><img data-origin="images/0703/006.png" src="images/count.png"></li>
+					<li><img data-origin="images/0703/007.png" src="images/count.png"></li>
+					<li><img data-origin="images/0703/008.png" src="images/count.png"></li>
+					<li><img data-origin="images/0703/009.png" src="images/count.png"></li>
+					<li><img data-origin="images/0703/010.png" src="images/count.png"></li>
+					<li><img data-origin="images/0703/011.png" src="images/count.png"></li>
+					<li><img data-origin="images/0703/012.png" src="images/count.png"></li>
+					<li><img data-origin="images/0703/013.png" src="images/count.png"></li>
+					<div class="img-count"><div></div></div>
+				</ul>
+				<div class="tl-dot"></div>
+			</li>
+			<li class="time-item">
+				<div class="tl-text">
+					第一次她这么庄重的回复……
+				</div>
+				<div class="tl-attach">
+					【附件：第二封信】
+					<div>
+						一个人，从陌生到熟悉;一段感情，从开始到结束，说放下真的好难。佳佳，听我最后一次说爱你。上个礼拜，你问我为什么突然问是否打扰到你，我说了我的理由，其实还有最重要一点是那天看到了扇贝上你的说说，也许强行介入你的感情本来就是一种过错。所以这一个礼拜我选择了沉默，即使偶尔心也会痛。说真的，我很羡慕你的前男友能够拥有你无私的爱，更羡慕你的现男友可以在你最需要的时候陪伴你并包容你的一切。你是第二个让我心动并鼓起勇气表白的女孩，虽然都已失败告终，我不明白自己到底欠缺哪一点，也许肥皂剧本就是泡沫，只是我还沉醉在泡沫的斑斓中，不能自拔。对于第一段结果我理解，在最没有能力的年纪遇到最想照顾一生的女孩，被拒绝我不怨她，只怪自己能力有限，所以这两年多我一直在努力，也努力寻找爱的理由。五一的时候我决定离职，在父母的要求下打算去深圳，和一个谈了几个月的女孩交往下去，我以为我的一生从此写定。可在天津的那几天，是你让我明白什么是爱，让我重新找到追求的勇气，那几天我一直想起你，你的开朗和乐观原来一直藏在我的心里，原来和你在一起还有这么多快乐，原来在不知什么时候我已悄悄喜欢上你。所以考虑再三，我决定放手去爱，为你我回来了，即使知道了你有了男朋友，即使知道这是一个没有开始的结局，但我不后悔，因为我知道错过意味着什么。你知道吗，在向你表白到等待你回复的那一刻，我的心一直提在嗓子里，原来我对你的爱这么强烈，我知道自己的决定没有错。那天晚上你和我讲了你的经历，我更加觉的为你什么都是值得的。爱需要付出，更需要懂得付出。我很高兴和你在一起的每一天。爱你我不后悔，只后悔没能早点认识你。
+					</div>
+				</div>
+				<ul class="tl-imgs">
+					<li><img data-origin="images/0710/001.png" src="images/0710/001.png"></li>
+					<li><img data-origin="images/0710/002.png" src="images/0710/002.png"></li>
+					<li><img data-origin="images/0710/003.png" src="images/0710/003.png"></li>
+					<li><img data-origin="images/0710/004.png" src="images/0710/004.png"></li>
+					<li><img data-origin="images/0710/005.png" src="images/0710/005.png"></li>
+					<li><img data-origin="images/0710/006.png" src="images/count.png"></li>
+					<li><img data-origin="images/0710/007.png" src="images/count.png"></li>
+					<div class="img-count"><div></div></div>
+				</ul>
+				<div class="tl-dot"></div>
+			</li>
+			<li class="time-item">
+				<div class="tl-text">
+					今天于总找我们谈话，说在重庆出差的事，很焦虑，担心她会离开……
+				</div>
+				<div class="tl-attach"></div>
+				<ul class="tl-imgs">
+					<li><img data-origin="images/0712/001.png" src="images/0712/001.png"></li>
+					<li><img data-origin="images/0712/002.png" src="images/0712/002.png"></li>
+					<li><img data-origin="images/0712/003.png" src="images/0712/003.png"></li>
+					<li><img data-origin="images/0712/004.png" src="images/0712/004.png"></li>
+					<li><img data-origin="images/0712/005.png" src="images/0712/005.png"></li>
+					<div class="img-count"><div></div></div>
+				</ul>
+				<div class="tl-dot"></div>
+			</li>
+			<li class="time-item">
+				<div class="tl-text">
+					看到了她小时候的照片，还有打算她生日的时候送她一个新的乔巴公仔~~~
+				</div>
+				<div class="tl-attach"></div>
+				<ul class="tl-imgs">
+					<li><img data-origin="images/0716/001.png" src="images/0716/001.png"></li>
+					<li><img data-origin="images/0716/002.png" src="images/0716/002.png"></li>
+					<li><img data-origin="images/0716/003.png" src="images/0716/003.png"></li>
+					<li><img data-origin="images/0716/004.png" src="images/0716/004.png"></li>
+					<li><img data-origin="images/0716/005.png" src="images/0716/005.png"></li>
+					<li><img data-origin="images/0716/006.png" src="images/count.png"></li>
+					<li><img data-origin="images/0716/007.png" src="images/count.png"></li>
+					<li><img data-origin="images/0716/008.png" src="images/count.png"></li>
+					<li><img data-origin="images/0716/009.png" src="images/count.png"></li>
+					<li><img data-origin="images/0716/010.png" src="images/count.png"></li>
+					<li><img data-origin="images/0716/011.png" src="images/count.png"></li>
+					<li><img data-origin="images/0716/012.png" src="images/count.png"></li>
+					<li><img data-origin="images/0716/013.png" src="images/count.png"></li>
+					<li><img data-origin="images/0716/014.png" src="images/count.png"></li>
+					<li><img data-origin="images/0716/015.png" src="images/count.png"></li>
+					<li><img data-origin="images/0716/016.png" src="images/count.png"></li>
+					<li><img data-origin="images/0716/017.png" src="images/count.png"></li>
+					<li><img data-origin="images/0716/018.png" src="images/count.png"></li>
+					<li><img data-origin="images/0716/019.png" src="images/count.png"></li>
+					<li><img data-origin="images/0716/020.png" src="images/count.png"></li>
+					<li><img data-origin="images/0716/021.png" src="images/count.png"></li>
+					<li><img data-origin="images/0716/022.png" src="images/count.png"></li>
+					<li><img data-origin="images/0716/023.png" src="images/count.png"></li>
+					<li><img data-origin="images/0716/024.png" src="images/count.png"></li>
+					<li><img data-origin="images/0716/025.png" src="images/count.png"></li>
+					<li><img data-origin="images/0716/026.png" src="images/count.png"></li>
+					<li><img data-origin="images/0716/027.png" src="images/count.png"></li>
+					<div class="img-count"><div></div></div>
+				</ul>
+				<div class="tl-dot"></div>
+			</li>
+			<li class="time-item">
+				<div class="tl-text">
+					第一次主动约她，被拒，有点难过~~~
+				</div>
+				<div class="tl-attach"></div>
+				<ul class="tl-imgs">
+					<li><img data-origin="images/0717/001.png" src="images/0717/001.png"></li>
+					<li><img data-origin="images/0717/002.png" src="images/0717/002.png"></li>
+					<li><img data-origin="images/0717/003.png" src="images/0717/003.png"></li>
+					<li><img data-origin="images/0717/004.png" src="images/0717/004.png"></li>
+					<li><img data-origin="images/0717/005.png" src="images/0717/005.png"></li>
+					<li><img data-origin="images/0717/006.png" src="images/count.png"></li>
+					<li><img data-origin="images/0717/007.png" src="images/count.png"></li>
+					<li><img data-origin="images/0717/008.png" src="images/count.png"></li>
+					<li><img data-origin="images/0717/009.png" src="images/count.png"></li>
+					<li><img data-origin="images/0717/010.png" src="images/count.png"></li>
+					<li><img data-origin="images/0717/011.png" src="images/count.png"></li>
+					<div class="img-count"><div></div></div>
+				</ul>
+				<div class="tl-dot"></div>
+			</li>
+			<li class="time-item">
+				<div class="tl-text">
+					今天触起了她的伤心事，不能在身边陪她，有点难过……
+				</div>
+				<div class="tl-attach">
+					【附件：第三封信】
+					<div>
+						佳佳，我不知道如何去安慰你，因为我找不出一个好的理由去告诉自己。毕竟感情不是感动就可以，生活也不仅为了生存。我知道你忘不了他，这是你们的记忆，青春都有懵懂的开始，但最美的开始不一定有最好的结局，就像春天里的百花一样，能够让它盛开的确实离不开和煦的阳光和滋润的雨水，但能够永远陪伴它的却是足下的土壤。也许我不像阳光一样灿烂也不像雨水一样甘甜，但我愿做土壤的殷实，陪你看每一次花开与花谢。人一生感情戏很少，有时候错过的不一定是最好的，而留下来的不一定是最美的，选择就是如此。但一定要遵循心的本质，每一个爱你的人都不希望你流泪，我也一样。不要委屈和困扰自己，如果确实放不下他，就放手勇敢去爱。
+					</div>
+				</div>
+				<div class="tl-dot"></div>
+			</li>
+			<li class="time-item">
+				<div class="tl-text">
+					今天她买了一条新裙子，可惜没猜中什么款式~~~
+				</div>
+				<div class="tl-attach"></div>
+				<ul class="tl-imgs">
+					<li><img data-origin="images/0719/001.png" src="images/0719/001.png"></li>
+					<li><img data-origin="images/0719/002.png" src="images/0719/002.png"></li>
+					<li><img data-origin="images/0719/003.png" src="images/0719/003.png"></li>
+					<li><img data-origin="images/0719/004.png" src="images/0719/004.png"></li>
+					<li><img data-origin="images/0719/005.png" src="images/0719/005.png"></li>
+					<li><img data-origin="images/0719/006.png" src="images/count.png"></li>
+					<li><img data-origin="images/0719/007.png" src="images/count.png"></li>
+					<li><img data-origin="images/0719/008.png" src="images/count.png"></li>
+					<li><img data-origin="images/0719/009.png" src="images/count.png"></li>
+					<li><img data-origin="images/0719/010.png" src="images/count.png"></li>
+					<li><img data-origin="images/0719/011.png" src="images/count.png"></li>
+					<li><img data-origin="images/0719/012.png" src="images/count.png"></li>
+					<li><img data-origin="images/0719/013.png" src="images/count.png"></li>
+					<li><img data-origin="images/0719/014.png" src="images/count.png"></li>
+					<li><img data-origin="images/0719/015.png" src="images/count.png"></li>
+					<li><img data-origin="images/0719/016.png" src="images/count.png"></li>
+					<li><img data-origin="images/0719/017.png" src="images/count.png"></li>
+					<li><img data-origin="images/0719/018.png" src="images/count.png"></li>
+					<li><img data-origin="images/0719/019.png" src="images/count.png"></li>
+					<li><img data-origin="images/0719/020.png" src="images/count.png"></li>
+					<li><img data-origin="images/0719/021.png" src="images/count.png"></li>
+					<li><img data-origin="images/0719/022.png" src="images/count.png"></li>
+					<div class="img-count"><div></div></div>
+				</ul>
+				<div class="tl-dot"></div>
+			</li>
+			<li class="time-item">
+				<div class="tl-text">
+					今天她为我生气，很开心也很感动……
+				</div>
+				<div class="tl-attach"></div>
+				<ul class="tl-imgs">
+					<li><img data-origin="images/0722/001.png" src="images/0722/001.png"></li>
+					<li><img data-origin="images/0722/002.png" src="images/0722/002.png"></li>
+					<li><img data-origin="images/0722/003.png" src="images/0722/003.png"></li>
+					<li><img data-origin="images/0722/004.png" src="images/0722/004.png"></li>
+					<li><img data-origin="images/0722/005.png" src="images/0722/005.png"></li>
+					<li><img data-origin="images/0722/006.png" src="images/count.png"></li>
+					<li><img data-origin="images/0722/007.png" src="images/count.png"></li>
+					<li><img data-origin="images/0722/008.png" src="images/count.png"></li>
+					<li><img data-origin="images/0722/009.png" src="images/count.png"></li>
+					<li><img data-origin="images/0722/010.png" src="images/count.png"></li>
+					<li><img data-origin="images/0722/011.png" src="images/count.png"></li>
+					<li><img data-origin="images/0722/012.png" src="images/count.png"></li>
+					<div class="img-count"><div></div></div>
+				</ul>
+				<div class="tl-dot"></div>
+			</li>
+			<li class="time-item">
+				<div class="tl-text">
+					出差回家，向她解释了LovePlus的含义……
+				</div>
+				<div class="tl-attach"></div>
+				<ul class="tl-imgs">
+					<li><img data-origin="images/0724/001.png" src="images/0724/001.png"></li>
+					<li><img data-origin="images/0724/002.png" src="images/0724/002.png"></li>
+					<li><img data-origin="images/0724/003.png" src="images/0724/003.png"></li>
+					<li><img data-origin="images/0724/004.png" src="images/0724/004.png"></li>
+					<li><img data-origin="images/0724/005.png" src="images/0724/005.png"></li>
+					<li><img data-origin="images/0724/006.png" src="images/count.png"></li>
+					<li><img data-origin="images/0724/007.png" src="images/count.png"></li>
+					<li><img data-origin="images/0724/008.png" src="images/count.png"></li>
+					<li><img data-origin="images/0724/009.png" src="images/count.png"></li>
+					<li><img data-origin="images/0724/010.png" src="images/count.png"></li>
+					<li><img data-origin="images/0724/011.png" src="images/count.png"></li>
+					<li><img data-origin="images/0724/012.png" src="images/count.png"></li>
+					<li><img data-origin="images/0724/013.png" src="images/count.png"></li>
+					<li><img data-origin="images/0724/014.png" src="images/count.png"></li>
+					<li><img data-origin="images/0724/015.png" src="images/count.png"></li>
+					<li><img data-origin="images/0724/016.png" src="images/count.png"></li>
+					<li><img data-origin="images/0724/017.png" src="images/count.png"></li>
+					<li><img data-origin="images/0724/018.png" src="images/count.png"></li>
+					<li><img data-origin="images/0724/019.png" src="images/count.png"></li>
+					<li><img data-origin="images/0724/020.png" src="images/count.png"></li>
+					<div class="img-count"><div></div></div>
+				</ul>
+				<div class="tl-dot"></div>
+			</li>
+			<li class="time-item">
+				<div class="tl-text">
+					今天她主动和我聊天，很开心……
+				</div>
+				<div class="tl-attach"></div>
+				<ul class="tl-imgs">
+					<li><img data-origin="images/0731/001.png" src="images/0731/001.png"></li>
+					<li><img data-origin="images/0731/002.png" src="images/0731/002.png"></li>
+					<li><img data-origin="images/0731/003.png" src="images/0731/003.png"></li>
+					<li><img data-origin="images/0731/004.png" src="images/0731/004.png"></li>
+					<li><img data-origin="images/0731/005.png" src="images/0731/005.png"></li>
+					<li><img data-origin="images/0731/006.png" src="images/count.png"></li>
+					<li><img data-origin="images/0731/007.png" src="images/count.png"></li>
+					<li><img data-origin="images/0731/008.png" src="images/count.png"></li>
+					<li><img data-origin="images/0731/009.png" src="images/count.png"></li>
+					<li><img data-origin="images/0731/010.png" src="images/count.png"></li>
+					<li><img data-origin="images/0731/011.png" src="images/count.png"></li>
+					<li><img data-origin="images/0731/012.png" src="images/count.png"></li>
+					<li><img data-origin="images/0731/013.png" src="images/count.png"></li>
+					<li><img data-origin="images/0731/014.png" src="images/count.png"></li>
+					<li><img data-origin="images/0731/015.png" src="images/count.png"></li>
+					<li><img data-origin="images/0731/016.png" src="images/count.png"></li>
+					<li><img data-origin="images/0731/017.png" src="images/count.png"></li>
+					<li><img data-origin="images/0731/018.png" src="images/count.png"></li>
+					<li><img data-origin="images/0731/019.png" src="images/count.png"></li>
+					<li><img data-origin="images/0731/020.png" src="images/count.png"></li>
+					<li><img data-origin="images/0731/021.png" src="images/count.png"></li>
+					<li><img data-origin="images/0731/022.png" src="images/count.png"></li>
+					<li><img data-origin="images/0731/023.png" src="images/count.png"></li>
+					<div class="img-count"><div></div></div>
+				</ul>
+				<div class="tl-dot"></div>
+			</li>
+			<li class="time-item">
+				<div class="tl-text">
+					今天武汉出差，有点想她……
+				</div>
+				<div class="tl-attach"></div>
+				<ul class="tl-imgs">
+					<li><img data-origin="images/0801/001.png" src="images/0801/001.png"></li>
+					<li><img data-origin="images/0801/002.png" src="images/0801/002.png"></li>
+					<li><img data-origin="images/0801/003.png" src="images/0801/003.png"></li>
+					<li><img data-origin="images/0801/004.png" src="images/0801/004.png"></li>
+					<li><img data-origin="images/0801/005.png" src="images/0801/005.png"></li>
+					<li><img data-origin="images/0801/006.png" src="images/count.png"></li>
+					<li><img data-origin="images/0801/007.png" src="images/count.png"></li>
+					<li><img data-origin="images/0801/008.png" src="images/count.png"></li>
+					<li><img data-origin="images/0801/009.png" src="images/count.png"></li>
+					<li><img data-origin="images/0801/010.png" src="images/count.png"></li>
+					<li><img data-origin="images/0801/011.png" src="images/count.png"></li>
+					<li><img data-origin="images/0801/012.png" src="images/count.png"></li>
+					<li><img data-origin="images/0801/013.png" src="images/count.png"></li>
+					<li><img data-origin="images/0801/014.png" src="images/count.png"></li>
+					<li><img data-origin="images/0801/015.png" src="images/count.png"></li>
+					<li><img data-origin="images/0801/016.png" src="images/count.png"></li>
+					<li><img data-origin="images/0801/017.png" src="images/count.png"></li>
+					<li><img data-origin="images/0801/018.png" src="images/count.png"></li>
+					<li><img data-origin="images/0801/019.png" src="images/count.png"></li>
+					<li><img data-origin="images/0801/020.png" src="images/count.png"></li>
+					<li><img data-origin="images/0801/021.png" src="images/count.png"></li>
+					<li><img data-origin="images/0801/022.png" src="images/count.png"></li>
+					<li><img data-origin="images/0801/023.png" src="images/count.png"></li>
+					<li><img data-origin="images/0801/024.png" src="images/count.png"></li>
+					<li><img data-origin="images/0801/025.png" src="images/count.png"></li>
+					<li><img data-origin="images/0801/026.png" src="images/count.png"></li>
+					<li><img data-origin="images/0801/027.png" src="images/count.png"></li>
+					<li><img data-origin="images/0801/028.png" src="images/count.png"></li>
+					<li><img data-origin="images/0801/029.png" src="images/count.png"></li>
+					<li><img data-origin="images/0801/030.png" src="images/count.png"></li>
+					<div class="img-count"><div></div></div>
+				</ul>
+				<div class="tl-dot"></div>
+			</li>
+			<li class="time-item">
+				<div class="tl-text">
+					好久没听到她的声音，有点不习惯……
+				</div>
+				<div class="tl-attach"></div>
+				<ul class="tl-imgs">
+					<li><img data-origin="images/0802/001.png" src="images/0802/001.png"></li>
+					<li><img data-origin="images/0802/002.png" src="images/0802/002.png"></li>
+					<li><img data-origin="images/0802/003.png" src="images/0802/003.png"></li>
+					<li><img data-origin="images/0802/004.png" src="images/0802/004.png"></li>
+					<li><img data-origin="images/0802/005.png" src="images/0802/005.png"></li>
+					<li><img data-origin="images/0802/006.png" src="images/count.png"></li>
+					<li><img data-origin="images/0802/007.png" src="images/count.png"></li>
+					<li><img data-origin="images/0802/008.png" src="images/count.png"></li>
+					<li><img data-origin="images/0802/009.png" src="images/count.png"></li>
+					<li><img data-origin="images/0802/010.png" src="images/count.png"></li>
+					<li><img data-origin="images/0802/011.png" src="images/count.png"></li>
+					<li><img data-origin="images/0802/012.png" src="images/count.png"></li>
+					<li><img data-origin="images/0802/013.png" src="images/count.png"></li>
+					<li><img data-origin="images/0802/014.png" src="images/count.png"></li>
+					<li><img data-origin="images/0802/015.png" src="images/count.png"></li>
+					<li><img data-origin="images/0802/016.png" src="images/count.png"></li>
+					<li><img data-origin="images/0802/017.png" src="images/count.png"></li>
+					<li><img data-origin="images/0802/018.png" src="images/count.png"></li>
+					<div class="img-count"><div></div></div>
+				</ul>
+				<div class="tl-dot"></div>
+			</li>
+			<li class="time-item">
+				<div class="tl-text">
+					姐姐小产，幸好有她的安慰，要不然我真的不知道怎么办……
+				</div>
+				<div class="tl-attach"></div>
+				<ul class="tl-imgs">
+					<li><img data-origin="images/0802B/001.png" src="images/0802B/001.png"></li>
+					<li><img data-origin="images/0802B/002.png" src="images/0802B/002.png"></li>
+					<li><img data-origin="images/0802B/003.png" src="images/0802B/003.png"></li>
+					<li><img data-origin="images/0802B/004.png" src="images/0802B/004.png"></li>
+					<li><img data-origin="images/0802B/005.png" src="images/0802B/005.png"></li>
+					<li><img data-origin="images/0802B/006.png" src="images/count.png"></li>
+					<li><img data-origin="images/0802B/007.png" src="images/count.png"></li>
+					<li><img data-origin="images/0802B/008.png" src="images/count.png"></li>
+					<li><img data-origin="images/0802B/009.png" src="images/count.png"></li>
+					<li><img data-origin="images/0802B/010.png" src="images/count.png"></li>
+					<li><img data-origin="images/0802B/011.png" src="images/count.png"></li>
+					<li><img data-origin="images/0802B/012.png" src="images/count.png"></li>
+					<li><img data-origin="images/0802B/013.png" src="images/count.png"></li>
+					<li><img data-origin="images/0802B/014.png" src="images/count.png"></li>
+					<li><img data-origin="images/0802B/015.png" src="images/count.png"></li>
+					<li><img data-origin="images/0802B/016.png" src="images/count.png"></li>
+					<li><img data-origin="images/0802B/017.png" src="images/count.png"></li>
+					<li><img data-origin="images/0802B/018.png" src="images/count.png"></li>
+					<li><img data-origin="images/0802B/019.png" src="images/count.png"></li>
+					<li><img data-origin="images/0802B/020.png" src="images/count.png"></li>
+					<li><img data-origin="images/0802B/021.png" src="images/count.png"></li>
+					<li><img data-origin="images/0802B/022.png" src="images/count.png"></li>
+					<li><img data-origin="images/0802B/023.png" src="images/count.png"></li>
+					<li><img data-origin="images/0802B/024.png" src="images/count.png"></li>
+					<li><img data-origin="images/0802B/025.png" src="images/count.png"></li>
+					<li><img data-origin="images/0802B/026.png" src="images/count.png"></li>
+					<li><img data-origin="images/0802B/027.png" src="images/count.png"></li>
+					<li><img data-origin="images/0802B/028.png" src="images/count.png"></li>
+					<li><img data-origin="images/0802B/029.png" src="images/count.png"></li>
+					<li><img data-origin="images/0802B/030.png" src="images/count.png"></li>
+					<div class="img-count"><div></div></div>
+				</ul>
+				<div class="tl-dot"></div>
+			</li>
+			<li class="time-item">
+				<div class="tl-text">
+					今天她分手了，我却高兴不起来，不想看到她悲伤的样子，有点心痛……
+				</div>
+				<div class="tl-attach"></div>
+				<ul class="tl-imgs">
+					<li><img data-origin="images/0803/001.png" src="images/0803/001.png"></li>
+					<li><img data-origin="images/0803/002.png" src="images/0803/002.png"></li>
+					<div class="img-count"><div></div></div>
+				</ul>
+				<div class="tl-dot"></div>
+			</li>
+			<li class="time-item">
+				<div class="tl-text">
+					今天心很痛，休息了一天，这是为她写的诗，终究没有勇气再拿出来……
+				</div>
+				<div class="tl-attach"></div>
+				<div id="letter"></div>
+				<div class="poem">
+					天河青城又乌衣，<br>
+					<a>我</a>思云彩月思亲。<br>
+					河<a>溪|喜</a>同去朝天聚，<br>
+					牡丹<a>欢</a>笑喜鹊鸣。<br>
+					比翼连<a>理|你</a>诉真爱，<br>
+					牛郎织女<a>擒|秦</a>真情。<br>
+					最喜海角逢<a>佳</a>客，<br>
+					至此天涯又一<a>家|佳</a>。<br>
+				</div>
+				<div class="tl-dot"></div>
+			</li>
+			<li class="time-item">
+				<div class="tl-text">
+					学习陕西话期间她和我说的话，满满一屏，喜欢听她说话的声音……
+				</div>
+				<div class="tl-attach">
+					【附件：陕西话笔记】
+					<div>
+						武大   那   [我屋在武打滴]<br>阿达   哪   [你猜我屋是阿达滴]<br>爸爸  爸爸<br>嘛  妈妈<br>为梳  太瘦    [你长的为梳滴]<br>哈怂  坏蛋<br>木怂  笨蛋<br>瓜怂  傻瓜<br>犟怂，倔怂   倔犟<br>瓜  傻<br>房间  确弟<br>茶油饼   炸油饼<br>巧巧  小鸟<br>婆  奶奶<br>付儿  裤子<br>撒  头<br>微婆  外婆<br>微耶  外公<br>先付  秋裤<br>一思再说   一会儿再说<br>普浪  脖子<br>哼  杏<br>念窝  眼睛<br>字头  手指头<br>nia  牙齿<br>痞子  鼻子<br>钩子  屁股<br>木乱滴  烦躁<br>不当滴  可怜<br>西黄的  可怜<br>饿  我<br>灵滴很  聪明<br>必尔  被子<br>碎姑   小姑<br>虽娃  小孩<br>yan二声（淹），词义比较广泛，碾压，按，磨<br>个旧  蹲着<br>木囊   墨迹<br>仕龙   忽悠<br>搞滴   差不多（形容抽象的事物如清楚，明白）<br>蒸馍   馒头<br>老挖沙   面食（有嚼劲的面疙瘩）<br>福袋面  裤带面  biangbiang面   杨林蘸水面<br>然条面<br>闷饭<br>么年sei   没有眼力劲儿<br>珠珠拉蛋  絮絮落落形容衣服设计比较复杂
+					</div>
+				</div>
+				<ul class="tl-imgs">
+					<li><img data-origin="images/0906/001.png" src="images/0906/001.png"></li>
+					<div class="img-count"><div></div></div>
+				</ul>
+				<div class="tl-dot"></div>
+			</li>
+			<li class="time-item">
+				<div class="tl-text">
+					今天向她解释了我为什么喜欢做前端。其实还有一个重要原因，因为她是一名前端，只有自己前端更加精通才会有帮到她的时候……
+				</div>
+				<div class="tl-attach">
+					【附件：前端见解】
+					<div>
+						为什么我喜欢做前端？一方面前端有交流空间不只是工作；另一方面，相对于后端了解的成熟，前端有更多可探索的空间。这样无论未来创业还是发展，都会有良好的全栈基础，也可作为一种技术积累。这在我学习react方面就有体现，我把学习的重心放到切片上而不是在数据逻辑层上。多切片只是一种勤能补拙的学习方式，我一直坚信实践比理论来的更加真实也更容易理解～
+					</div>
+				</div>
+				<div class="tl-dot"></div>
+			</li>
+			<li class="time-item">
+				<div class="tl-text">
+					今天和她打卡对赌了，一是不希望看到她对于坚持那么久的东西轻易放弃；二是如果我自己都不去努力又有什么理由劝说她继续坚持；三是如果她忘了打卡，这样我就有了和她搭讪的理由；四是希望她也能够多关注留意一下我……
+				</div>
+				<div class="tl-attach"></div>
+				<ul class="tl-imgs">
+					<li><img data-origin="images/1107/001.png" src="images/1107/001.png"></li>
+					<div class="img-count"><div></div></div>
+				</ul>
+				<div class="tl-dot"></div>
+			</li>
+			<li class="time-item">
+				<div class="tl-text">
+					今天她很生气，对于产品反复的修改。其实我也不知道如何去安慰她，就说说自己目前的看法吧！
+				</div>
+				<div class="tl-attach">
+					【附加：对于目前产品的看法】
+					<div>
+						气消了没，如果没消就看完下面这段话吧。我知道你现在对整个产品流程有很大的不满，其实我也一样。作为产品“咋样了”没有一个好的定位和清晰的设计结构，很多地方都是对已有项目功能的嵌套和其它设计的借鉴，并没有对设计和逻辑的合理性与必要性做过专门的思考与讨论。很多都是一时兴起的改动，没有市场分析与调研的反馈。可是这样一款不合格的产品为什么还要上线运行呢？一、能够让市场部以此为媒介去吸引更多互联网项目的投资。就像当初的骏地作为天鸿的桥梁一样。二、是公司由传统型企业向互联网企业过渡的象征。三、作为产品“咋样了”满足了多终端协同办公的需求。总的来说，这个产品最大的价值就是对外宣传的DEMO,因为一旦客户使用必定会有定制化的需求，后期以此来改变是必不可少的事情。所以也没必要那么执着，能够让市场部运行起来，可以对外宣传就足够了，至于杨超那边简单合理性的需求改改就可以了～
+					</div>
+				</div>
+				<div class="tl-dot"></div>
+			</li>
+			<li class="time-item">
+				<div class="tl-text">
+					好长一段时间，我们没有说过话了，也不知道她对我有什么成见和看法，很多次都想主动开口，却也不知道该说些什么……
+				</div>
+				<div class="tl-attach"></div>
+				<div class="tl-dot"></div>
+			</li>
+			<li class="time-item">
+				<div class="tl-text">
+					今天她鼻炎复发，有点担心她……
+				</div>
+				<div class="tl-attach"></div>
+				<ul class="tl-imgs">
+					<li><img data-origin="images/1218/001.png" src="images/1218/001.png"></li>
+					<li><img data-origin="images/1218/002.png" src="images/1218/002.png"></li>
+					<li><img data-origin="images/1218/003.png" src="images/1218/003.png"></li>
+					<li><img data-origin="images/1218/004.png" src="images/1218/004.png"></li>
+					<li><img data-origin="images/1218/005.png" src="images/1218/005.png"></li>
+					<li><img data-origin="images/1218/006.png" src="images/count.png"></li>
+					<li><img data-origin="images/1218/007.png" src="images/count.png"></li>
+					<li><img data-origin="images/1218/008.png" src="images/count.png"></li>
+					<li><img data-origin="images/1218/009.png" src="images/count.png"></li>
+					<li><img data-origin="images/1218/010.png" src="images/count.png"></li>
+					<li><img data-origin="images/1218/011.png" src="images/count.png"></li>
+					<li><img data-origin="images/1218/012.png" src="images/count.png"></li>
+					<div class="img-count"><div></div></div>
+				</ul>
+				<div class="tl-dot"></div>
+			</li>
+			<li class="time-item">
+				<div class="tl-text">
+					一晃眼，打卡100天了，从开始时的心血来潮到现在的执着坚持，很感谢自己从未放弃，因为她……
+				</div>
+				<div class="tl-attach"></div>
+				<div class="tl-dot"></div>
+			</li>
+			<li class="time-item">
+				<div class="tl-text">
+					<p>今天是向她表白后的第200天，这一路走来有喜有乐有苦有忧，但是无怨无悔。</p>
+        			<p>有时候我会想如果当初没有向她表白，我们会怎样？是不是会更加自然一点呢？至少在某些情况下不至于那么隔阂与尴尬吧！我们会不会有更多的交流，开个简单的玩笑？亦或还是像现在这样风平浪静犹如路人？我知道一切的假设都是未知的，但是总有一个念头让我胡思乱想。</p>
+        			<p>我害怕自己一直以来都是一厢情愿的表演，却无知感情不是一个人的舞台。我害怕自己一直以来都是自作多情的关怀，却从没有从她的角度思考对待问题的看法。</p>
+        			<p>我总是想太多，也总是期望着太多。我希望她能够像我关心她一样多关心一下我，在我沮丧失落的时候问一句，“怎么了还好吗”；在我无助和迷茫的时候，能够及时伸出一只手，让我远离短暂的黑暗；亦或是在她开心快乐时和我分享她的喜悦；在她苦恼烦躁时让我出谋划策；在她痛苦伤心时向我借一个可以依靠的肩膀……</p>
+        			<p>人总是有太多的不满足，却从没有想过别人应不应该。所以我决定在这个特殊的时刻写完这最后的一封信，作为一个恋想就此封存，铭记那些曾经走过的岁月，也算是对爱的一种交待吧，衷心祝福你要幸福。</p>
+				</div>
+				<div class="tl-attach">
+					【附件：最后的信】
+					<div>
+						<p>今天是向她表白后的第200天，这一路走来有喜有乐有苦有忧，但是无怨无悔。</p>
+	        			<p>有时候我会想如果当初没有向她表白，我们会怎样？是不是会更加自然一点呢？至少在某些情况下不至于那么隔阂与尴尬吧！我们会不会有更多的交流，开个简单的玩笑？亦或还是像现在这样风平浪静犹如路人？我知道一切的假设都是未知的，但是总有一个念头让我胡思乱想。</p>
+	        			<p>我害怕自己一直以来都是一厢情愿的表演，却无知感情不是一个人的舞台。我害怕自己一直以来都是自作多情的关怀，却从没有从她的角度思考对待问题的看法。</p>
+	        			<p>我总是想太多，也总是期望着太多。我希望她能够像我关心她一样多关心一下我，在我沮丧失落的时候问一句，“怎么了还好吗”；在我无助和迷茫的时候，能够及时伸出一只手，让我远离短暂的黑暗；亦或是在她开心快乐时和我分享她的喜悦；在她苦恼烦躁时让我出谋划策；在她痛苦伤心时向我借一个可以依靠的肩膀……</p>
+	        			<p>人总是有太多的不满足，却从没有想过别人应不应该。所以我决定在这个特殊的时刻写完这最后的一封信，作为一个恋想就此封存，铭记那些曾经走过的岁月，也算是对爱的一种交待吧，衷心祝福你要幸福。</p>
+					</div>
+				</div>
+				<div class="tl-dot"></div>
+			</li>
+		</ul>
+	</div>
+
+	<div class="pop-box">
+		<div class="md-content">
+			
+		</div>
+	</div>
+	<div class="mark">
+		
+	</div>
+
+	<div class="clock">
+		<div id="watch">
+			<div class="frame-face"></div>
+				<ul class="minute-marks">
+					<li></li>
+					<li></li>
+					<li></li>
+					<li></li>
+					<li></li>
+					<li></li>
+					<li></li>
+					<li></li>
+					<li></li>
+					<li></li>
+					<li></li>
+					<li></li>
+					<li></li>
+					<li></li>
+					<li></li>
+					<li></li>
+					<li></li>
+					<li></li>
+					<li></li>
+					<li></li>
+					<li></li>
+					<li></li>
+					<li></li>
+					<li></li>
+					<li></li>
+					<li></li>
+					<li></li>
+					<li></li>
+					<li></li>
+					<li></li>
+					<li></li>
+					<li></li>
+					<li></li>
+					<li></li>
+					<li></li>
+					<li></li>
+					<li></li>
+					<li></li>
+					<li></li>
+					<li></li>
+					<li></li>
+					<li></li>
+					<li></li>
+					<li></li>
+					<li></li>
+					<li></li>
+					<li></li>
+					<li></li>
+				</ul>
+			<div class="digital-wrap" id="bbDays">
+				
+			</div>
+			<ul class="digits">
+				<li>1</li>
+				<li>2</li>
+				<li>3</li>
+				<li>4</li>
+				<li>5</li>
+				<li>6</li>
+				<li>7</li>
+				<li>8</li>
+				<li>9</li>
+				<li>10</li>
+				<li>11</li>
+				<li>12</li>
+			</ul>
+			<div class="hours-hand"></div>
+			<div class="minutes-hand"></div>
+			<div class="seconds-hand"></div>
+		</div>
+		<div class="clock-btn" onclick="openTimeList(this)">查看时间轴</div>
+	</div>
+
+	<div id="music"></div>
+</body>
+</html>
+<script src="js/jquery-1.11.1.min.js"></script>
+<script src="js/viewer.min.js"></script>
+<script src="js/APlayer.min.js"></script>
+<script>
+	$(function(){
+		var t1=new Date("2016-06-25 14:50").getTime();
+		var t2=new Date().getTime();
+		var date=t2-t1;
+		var days=Math.floor(date/(24*3600*1000));
+		var leave1=date%(24*3600*1000);
+		var hours=Math.floor(leave1/(3600*1000));
+		document.title="表白" + days+"天"+hours+"小时";
+		$("#bbDays").html(document.title);
+
+		var music = new APlayer({
+		    element: $("#music")[0],
+		    narrow: true,
+		    autoplay: true,
+		    showlrc: false,
+		    mutex: false,
+		    theme: '#e6d0b2',
+		    mode: 'circulation',
+		    music: {
+		        url: 'music/天空之城.mp3'
+		    }
+		});
+		music.play();
+
+
+		//测试
+		// $(".lock").hide();
+		// $(".clock").hide();
+		// $(".time-list").show();
+		// doStep();
+	})
+
+
+	$(".tl-attach").click(function(){
+		$(".md-content").html($(this).find("div").html());
+		$(".pop-box").addClass("md-show");
+	});
+
+	$('.lock-box').find("input").keydown(function(e){
+		if(e.keyCode==13){
+	       	var input=$(this).val();
+	    	if(isSuccess(input)){
+	    		$(".lock").hide();
+				$(".clock").show();
+	    	}else{
+	    		alert("解锁失败!");
+	    	}
+		}
+	});
+
+	$(".mark").click(function(){
+		$(".pop-box").removeClass("md-show");
+	})
+
+    $(".tl-imgs").each(function() {
+    	var cur=$(this);
+    	var count=cur.find("li").length;
+    	var div_count=cur.find(".img-count");
+    	div_count.find("div").html(count+"张");
+		if($("body").width()<768){
+    		if(count<6){
+    			div_count.hide();
+    		}else{
+    			div_count.show();    			
+    		}
+    	}else{
+    		if(count<5){
+    			div_count.hide();
+    		}else{
+    			div_count.show();
+    		}
+    	}
+		$(window).resize(function(){
+			if($(this).width()<768){
+	    		if(count<6){
+	    			div_count.hide();
+	    		}else{
+	    			div_count.show();    			
+	    		}
+	    	}else{
+	    		if(count<5){
+	    			div_count.hide();
+	    		}else{
+	    			div_count.show();
+	    		}
+	    	}
+		})
+    	
+
+        var viewer = new Viewer(cur[0], {
+            url: 'data-origin',
+            title:false
+        });
+    });
+
+    function openLock(e){
+    	var input=$(e).siblings("input").val();
+    	if(isSuccess(input)){
+    		$(".lock").hide();
+			$(".clock").show();
+    	}else{
+    		alert("解锁失败!");
+    	}
+    }
+
+    function openTimeList(){
+    	$(".clock").hide();
+		$(".time-list").show();
+	    doStep();
+    }
+
+    function isSuccess(str){
+    	str=str.toUpperCase();
+    	var _keyStr = "ABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789+/=";
+    	var arr=[],sum=0;
+    	for(var i=0;i<str.length;i++){
+    		var item=_keyStr.indexOf(str[i]);
+    		sum+=item;
+    		arr.push(item);
+    	}
+    	return arr[0]==arr[5]&&arr[2]-arr[6]==1&&arr[0]+arr[1]==arr[2]+arr[3]&&sum==114&&arr[1]+arr[3]==arr[arr.length-1];
+    }
+
+
+    //书写
+    var iCurChar = 0;
+    var sChars = '<span>';
+    var iCurInk = 0;
+    var sCurCaret = '';
+    var sCaret = "&nbsp;<img src='images/pen.gif' style='position:absolute;width:30px;height:20px' />";
+    var vLetter = document.getElementById('letter');
+	var sText=$(".poem")[0].innerHTML;
+    var doStep = function () {
+        var sChar = sText.charAt(iCurChar);
+        var iDelay = 0;
+        if (sChar == '') {
+            sCurCaret = '';
+        } else if (sChar == '|') { 
+            sChar = '';
+            sChars = sChars.substring(0, sChars.length-1);
+            iDelay = 64;
+        } else if (sChar == '<') { 
+            var iPos = sText.indexOf('>', iCurChar);
+            sChar = sText.substring(iCurChar, iPos + 1);
+            iCurChar = iPos;
+        } else if (sChar == '&') { 
+            var iPos = sText.indexOf(';', iCurChar);
+            sChar = sText.substring(iCurChar, iPos + 1);
+            iCurChar = iPos;
+        } else if (sChar == '.') { 
+            iDelay = 300;
+        } else if (sChar == ',') { 
+            iDelay = 100;
+        } else if (sChar == ' ') { 
+            iDelay = 32;
+        } else if (iCurChar > 5) {
+            sCurCaret = sCaret;
+        }
+        if (sChar == ' ') {
+            iCurInk += iSpeedInk;
+            sChar = '</span><span style="color:RGB(' + (iCurInk) + ',' + (iCurInk) + ',' + (iCurInk) + ')">' + sChar;
+        }
+        if (iCurInk > 160) {
+            iCurInk = 0;
+            iDelay = 1000;
+            sCurCaret = '';
+        }
+        sChars += sChar;
+        if (iCurChar == sText.length - 1)
+            sCurCaret = '';
+        vLetter.innerHTML = sChars + sCurCaret;
+        iCurChar++;
+        if (iCurChar < sText.length) {
+            poemTo=setTimeout(doStep, 200 + iDelay);
+        }else{
+			setTimeout(function(){
+				$(".poem").hide();
+			    iCurChar = 0;
+			    sChars = '<span>';
+			    iCurInk = 0;
+			    sCurCaret = '';
+			    clearTimeout(poemTo);
+				doStep();
+			},6000);
+        }
+    };
+</script>
